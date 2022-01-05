@@ -1,0 +1,22 @@
+{
+    "name": "express-rate-limit-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "babel app.js -d dist",
+        "start": "yarn build && node dist/app.js",
+        "dev": "nodemon --exec  babel-node app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.2",
+        "express-rate-limit": "^6.0.4"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.16.7",
+        "@babel/core": "^7.16.7",
+        "@babel/node": "^7.16.7",
+        "@babel/preset-env": "^7.16.7",
+        "nodemon": "^2.0.15"
+    }
+}
